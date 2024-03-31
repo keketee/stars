@@ -19,3 +19,90 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
+.main {
+  padding: 82px;
+}
+
+.title {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  color: #512051;
+  font-size: 40;
+  letter-spacing: -1.43px;
+  line-height: 32px;
+  text-align: center;
+}
+.text {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  color: #927b91;
+  letter-spacing: -0.63px;
+  line-height: 25px;
+  text-align: center;
+}
+.box {
+  background-color: #f9e8f8;
+  width: 327px;
+  height: 78px;
+  border-radius: 8px;
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+}
+.star {
+  position: relative;
+  content: "";
+  left: 115px;
+  top: -20px;
+}
+.text-star {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #512051;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: -20px;
+}
+.card {
+  background-color: #512051;
+  width: 327px;
+  height: 248px;
+  border-radius: 8px;
+  margin-top: 49px;
+}
+
+.logo {
+  display: flex;
+  padding: 32px;
+}
+.colton {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.name {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: white;
+}
+.verified {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #ee69a4;
+}
+.text-card {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  line-height: 22px;
+  width: 263px;
+  height: 110px;
+  margin-left: 30px;
+  margin-top: -10px;
+}
