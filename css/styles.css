@@ -1,131 +1,172 @@
 * {
   box-sizing: border-box;
 }
+
 img {
   display: block;
   max-width: 100%;
 }
-a {
-  text-decoration: none;
-  color: inherit;
-}
-ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 body {
-  margin: 0;
-  font-family: sans-serif;
-}
-.main {
-  padding: 82px;
+  padding-inline: 1.5rem;
+  max-width: 1440px;
+  margin-inline: auto;
+  font-family: "League Spartan", sans-serif;
 }
 
-.section {
-  width: 375px;
-  margin-top: -100px;
-  margin-inline: auto;
+@media screen and (width>768px) {
+  body {
+    padding: 7.375rem 10.3125rem;
+  }
 }
-.card-header {
-  width: 375px;
-  margin-inline: auto;
+.first-section {
+  display: flex;
+  flex-direction: column;
+  gap: 7.8125rem;
+}
+
+@media screen and (width>768px) {
+  .first-section {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.header {
+  text-align: center;
+}
+
+@media screen and (width>768px) {
+  .header {
+    width: 445px;
+    text-align: left;
+  }
 }
 
 .title {
-  font-family: "League Spartan", sans-serif;
-  font-weight: 700;
+  font-size: 2.5rem;
   color: #512051;
-  font-size: 40px;
-  letter-spacing: -1.43px;
-  line-height: 32px;
-  text-align: center;
+  letter-spacing: -1px;
+  margin-block: 5.125rem 1.0625rem;
 }
 
-.text {
-  font-family: "League Spartan", sans-serif;
-  font-weight: 500;
-  font-size: 19px;
+@media screen and (width>768px) {
+  .title {
+    font-size: 3.5rem;
+    line-height: 48px;
+    letter-spacing: -2px;
+  }
+}
+
+.intro-text {
+  margin-block: 0 2.5rem;
+  width: 327px;
+  line-height: 1.5625rem;
+  font-size: 1.1875rem;
   color: #927b91;
-  letter-spacing: -0.63px;
-  line-height: 25px;
-  text-align: center;
 }
-.box {
+
+@media screen and (width>768px) {
+  .intro-text {
+    width: 100%;
+  }
+}
+
+.reviews {
+  margin-bottom: 3.125rem;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
   background-color: #f9e8f8;
-  width: 327px;
-  height: 78px;
-  border-radius: 8px;
-  margin-top: 17px;
-  display: flex;
-  align-items: center;
-}
-.stars {
-  display: flex;
-  gap: 5px;
-}
-.star {
-  position: relative;
-  content: "";
-  left: 115px;
-  top: -20px;
-}
-.text-star {
-  font-family: "League Spartan", sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-  color: #512051;
-  text-align: center;
-  margin-top: 40px;
-  margin-left: -35px;
-}
-.cards {
-  width: 375px;
-  margin-inline: auto;
-}
-.card {
-  background-color: #512051;
-  width: 327px;
-  height: 248px;
-  border-radius: 8px;
-  margin-top: 49px;
-  padding: 40px 32px;
+  border-radius: 0.5rem;
+  height: 4.875rem;
 }
 
-.card-header {
-  display: flex;
-  left: 40px;
-  top: 20px;
-  gap: 20px;
-  align-items: center;
+@media screen and (width>768px) {
+  .review {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  .second-review {
+    position: relative;
+    left: 30px;
+  }
+  .third-review {
+    position: relative;
+    left: 60px;
+  }
 }
 
-.colton {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+.review-stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.9375rem;
 }
-.name {
-  font-family: "League Spartan", sans-serif;
+
+@media screen and (width>768px) {
+  .review-stars {
+    margin-bottom: 0;
+  }
+}
+
+.review-text {
+  font-size: 1.0625rem;
   font-weight: 700;
-  font-size: 17px;
-  color: white;
-  margin-block: 0;
+  color: #512051;
 }
-.verified {
-  font-family: "League Spartan", sans-serif;
-  font-weight: 400;
-  font-size: 17px;
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (width>768px) {
+  .testimonials {
+    flex-direction: row;
+  }
+}
+
+.testimonial-card {
+  padding: 2rem 2.3rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #512051;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-header-image {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.testimonial-header-text > * {
+  margin: 0.5rem;
+}
+
+.testimonial-name {
+  font-size: 1.0625rem;
+}
+
+.testimonial-status {
   color: #ee69a4;
 }
-.text-card {
-  font-family: "League Spartan", sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-  color: white;
 
-  line-height: 22px;
-  width: 263px;
-  height: 110px;
+.testimonial-text {
+  line-height: 1.375rem;
+  margin: 0;
 }
