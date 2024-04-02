@@ -61,6 +61,10 @@ body {
   display: flex;
   align-items: center;
 }
+.stars {
+  display: flex;
+  gap: 5px;
+}
 .star {
   position: relative;
   content: "";
@@ -74,7 +78,7 @@ body {
   color: #512051;
   text-align: center;
   margin-top: 40px;
-  margin-left: -20px;
+  margin-left: -35px;
 }
 .cards {
   width: 375px;
