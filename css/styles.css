@@ -132,6 +132,14 @@ body {
   .testimonials {
     flex-direction: row;
   }
+  .testimonials-second {
+    position: relative;
+    top: 20px;
+  }
+  .testimonials-third {
+    position: relative;
+    top: 40px;
+  }
 }
 
 .testimonial-card {
